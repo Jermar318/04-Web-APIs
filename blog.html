@@ -4,55 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
     <link rel="stylesheet" href="./assets/css/blog.css">
-    <title>Blog Posts</title>
-    
 </head>
 
 <body>
-    <div class="toggle-container">
-        <label class="toggle-label" for="dark-mode-toggle">Dark Mode:</label>
-        <input type="checkbox" id="dark-mode-toggle">
-    </div>
+    <h1>Blog</h1>
 
-    <h1>Blog Posts</h1>
-    <!-- Your blog post content goes here -->
-    <div id="blog-posts"></div>
+    <!-- Post container -->
+    <div id="post-container"></div>
 
-    <script>
-        // Retrieve blog posts from local storage
-        const post = JSON.parse(localStorage.getItem('post')) || [];
+    <!-- Pagination -->
+    <div id="pagination"></div>
 
-        // Function to render blog posts
-        function renderBlogPosts(post) {
-            const blogPostsContainer = document.getElementById('blog-posts');
-
-            // Clear existing blog posts
-            blogPostsContainer.innerHTML = '';
-
-            // Loop through each blog post and create HTML elements
-            blogPosts.forEach((post) => {
-                const postElement = document.createElement('div');
-                postElement.classList.add('blog-post');
-                postElement.innerHTML = `
-                    <h2>${post.title}</h2>
-                    <p>${post.content}</p>
-                    <p>Author: ${post.author}</p>
-                `;
-                blogPostsContainer.appendChild(postElement);
-            });
-        }
-
-        // Call the renderBlogPosts function to initially populate the blog posts
-        renderBlogPosts();
-    </script>
-
-
-    <a class="back-button" href="in.html">Back to Blog</a>
+    <!-- Light/Dark mode toggle -->
+    <button id="mode-toggle">Toggle Mode</button>
 
 
 </body>
-<script src="./assets/js/logic.js"></script>
 <script src="./assets/js/blog.js"></script>
 </html>

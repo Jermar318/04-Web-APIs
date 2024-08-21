@@ -1,64 +1,53 @@
-/* form.css */
+/* blog.css */
 
-/* Container for the signup form */
-.blogPostform {
-    width: 400px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Form header */
-.h1 {
+h1 {
     text-align: center;
+    margin-top: 50px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
-.signup-header h2 {
-    font-size: 24px;
-    color: #333;
+.toggle-label {
+    margin-right: 10px;
 }
 
-/* Form fields */
-.blogPostform input[type="text"],
-.blogPostform input[type="email"],
-.blogPostform input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+/* Blog post styles */
+.blog-post {
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Form submit button */
-
-.blogPostform input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: black;
-    border-radius: 1px;
-    cursor: pointer;
+.blog-post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.blogPostform input[type="submit"]:hover {
-    background-color: #45a049;
-}
-.blogPostform button {
-    width: 100%;
-    padding: 10px;
-    background-color: cornflowerblue;
-    color: #fff;
-    border: black;
-    border-radius: 1px;
-    cursor: pointer;
+.blog-post p {
+    margin-bottom: 10px;
 }
 
-/* Form error message */
-.signup-error {
-    color: red;
-    margin-top: 10px;
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    text-decoration: underline;
 }

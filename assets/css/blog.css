@@ -1,30 +1,42 @@
-        /* Light mode styles */
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-        }
+ /* Light mode styles */
+ body {
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #333;
-            color: #f5f5f5;
-        }
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
+/* Blog post container */
+.blog-post {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        .toggle-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            margin-bottom: 20px;
-        }
+/* Toggle mode button */
+.toggle-mode-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
 
-        .toggle-label {
-            margin-right: 10px;
-        }
+/* Additional styling for the button */
+.toggle-mode-button:hover {
+    background-color: #e0e0e0;
+}
 
-        .back-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #f5f5f5;
-            text-decoration: none;
-        }
+.toggle-mode-button:focus {
+    outline: none;
+}
