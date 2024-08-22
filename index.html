@@ -2,10 +2,21 @@
 <html>
 <head>
     <title>Blog Form</title>
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <h1>Create a New Blog</h1>
-    <form>
+    <h1>
+        Create a New Blog
+        <button id="mode-toggle">Toggle Mode</button>
+    </h1>
+    <div class="container">
+        <div class="img">
+    </div>        
+    <img src="./assets/Blog.jpeg" alt="Blog Image">
+    <form id="form" >
+
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         
@@ -17,6 +28,9 @@
         
         <input type="submit" value="Submit">
     </form>
-    <script src="./assets/js/form.js"></script>
 </body>
+<footer>
+    @PORTFOLIO: Jerry's Portfolio
+</footer>
+<script src="./assets/js/form.js"></script>
 </html>
