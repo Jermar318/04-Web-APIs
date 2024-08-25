@@ -1,7 +1,4 @@
 # Web-APIs-04
-Here's a README file based on the information provided:
-
----
 
 # Personal Blog
 
